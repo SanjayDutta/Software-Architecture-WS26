@@ -1,0 +1,30 @@
+Problem:
+
+Problem-introduction : Traditional shareholder voting processes can restrict effective participation in Annual General Meetings (AGMs) due to rigid deadlines, complex delegation procedures, and varying governance rules. The following problems affect individual and institutional shareholders:
+Problem-Points:
+Problem_Point-1:  Investors must submit voting instructions before shareholder meetings because of early deadlines, limiting their ability to revise decisions when new information emerges.
+Problem_Point-2:  The lack of real-time power-of-attorney capabilities prevents shareholders from delegating their voting rights to legal counsel before or during the meeting.
+Problem_Point-3:  Differences in share classes and voting rights complicate the accurate allocation of voting power, potentially leading to misrepresentation of shareholders' influence.
+Problem_Point-4:  Certain shareholders can block a resolution with a veto vote even if it wins the normal vote. The system must let only eligible holders use the veto within the voting window and apply it correctly in the tally.
+Problem-conclusion: These limitations can hinder shareholders from exercising their voting rights effectively, reducing voting flexibility, transparency, and confidence in corporate decision-making.
+
+
+Ideas:
+Idea-Introduction: We believe that a solution to the above problems is a Shareholder Governance Platform with the below functional and non-functional features :-
+Idea-Point-1:Identity & Delegation Gateway: Authenticate users and facilitate live proxy switching to instantly assign or revoke Power of Attorney to legal counsel.
+Idea-Point-2:Dynamic Rules & Weighting Engine: Calculate voting power using share classes and ownership records, while validating and applying veto effects to outcomes.
+Idea-Point-3:Live Ballot Broker: Accept and update voting instructions within deadlines, allowing investors to revise decisions and receive real-time updates.
+Idea-Point-4:Security & Auditability: Ensuring that all votes are logged in an immutable audit trail for legal compliance.
+
+
+Benefits
+Benifit-Point-1: Flexible Voting– Enables shareholders to revise voting decisions as new information emerges, within applicable voting deadlines.
+Benifit-Point-2: Real-Time Proxy Delegation** – Enables shareholders to assign or revoke voting authority to authorized representatives in real time, where permitted.
+Benifit-Point-3: Accurate Voting Power** – Ensures correct allocation of voting weights based on share ownership, share classes, and applicable voting rights.
+Benifit-Point-4: Enforced Veto Rights** – Prevents unauthorized veto usage through eligibility validation and ensures correct application of veto rights in voting outcomes.
+
+Action
+Action-1: Sprint 1 - Research shareholder meetings and voting procedures, identify functional and non-functional requirements, and develop a domain model covering key stakeholders and voting rules.
+Action-2: Sprint 2 - Design the system architecture, defining component responsibilities, API contracts, security boundaries, and event-driven interactions for voting and proxy delegation.
+Action 3: Sprint 3 - Develop a prototype integrating the Live Ballot Broker, Delegation Gateway, and Dynamic Rules Engine using a mocked share registry to demonstrate vote revisions, proxy delegation, weighted voting, and veto enforcement.
+Action-Info: Team Split: 2 Requirements Analysts, 2 Technical Developers, 1 Version Management Coordinator, 1 Domain Modelling Specialist.

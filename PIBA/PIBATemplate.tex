@@ -1,0 +1,100 @@
+% PIBA Template -- Software Architecture Lab, WS 2026/27, University of Stuttgart
+%
+% Self-contained: compile with pdflatex (no additional files needed).
+% Rules: the whole PIBA must fit on ONE page. Do not change font size or margins.
+% Replace all text in \todo{...} and remove the hints before submitting.
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\setlist{itemsep=0.1em, topsep=0.2em}
+
+% Placeholder marker; leave the definition, but remove all uses before submitting.
+\newcommand{\todo}[1]{\textcolor{gray}{[#1]}}
+
+% Part heading
+\newcommand{\pibapart}[1]{\vspace{0.4em}{\large\textbf{#1}}\par}
+
+% ---------------------------------------------------------------------------
+% Project information
+% ---------------------------------------------------------------------------
+\newcommand{\projecttitle}{{Shareholder Governance Platform}}
+\newcommand{\teamname}{ {Singapore}}
+\newcommand{\teammembers}{{Sanjay Dutta, Maximilian Munz, Prateek Puranik, Naga-Bhuvana Karri, Yadnee Pawar, Atharva Vivek Dabeer}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\textbf{\projecttitle}}\\[0.4em]
+  {\large PIBA -- Software Architecture Lab, WS 2026/27}\\[0.3em]
+  \teamname\ \textbullet\ \teammembers
+\end{center}
+
+% ---------------------------------------------------------------------------
+\pibapart{Problem}
+% What is wrong, missing, or hard today, and for whom?
+% Describe the situation today, not your solution. Name the system, the users,
+% and the concrete pain. Quantify where possible.
+Traditional shareholder voting processes restrict effective participation in Annual General Meetings (AGMs) due to rigid deadlines, complex procedures, and varying governance rules. The following problems affect individual and institutional shareholders:
+
+\begin{itemize}
+  \item Investors must submit voting instructions before shareholder meetings due to early deadlines, which their ability to revise decisions when new information emerges.
+  \item The lack of real-time power-of-attorney capabilities prevents shareholders from delegating their voting rights to legal counsel before or during the meeting.
+  \item Differences in share classes and voting rights complicate the accurate allocation of voting power, potentially leading to misrepresentation of shareholders' influence.
+  \item Certain shareholders can block a resolution with a veto vote. The system must let only eligible holders use the veto within the voting window and apply it correctly in the tally.
+\end{itemize}
+
+% ---------------------------------------------------------------------------
+\pibapart{Idea}
+% What is your proposed solution, and what does its architecture look like?
+% The architecture is the heart of your idea.
+We believe that a solution to the above problems is a Shareholder Governance Platform with the following functional and non-functional features:
+
+\begin{itemize}
+  \item \textbf{Identity \& Delegation Gateway:} Authenticate users and facilitate live proxy switching to instantly assign or revoke Power of Attorney to legal counsel.
+  \item \textbf{Dynamic Rules \& Weighting Engine:} Calculate voting power using share classes and ownership records, while validating and applying veto effects to outcomes.
+  \item \textbf{Live Ballot Broker:} Accept and update voting instructions within deadlines, allowing investors to revise decisions and receive real-time updates.
+  \item \textbf{Security \& Auditability:} Ensure that all votes are logged in an immutable audit trail for legal compliance.
+\end{itemize}
+
+% ---------------------------------------------------------------------------
+\pibapart{Benefits}
+% What improves if the idea works, and how would you show it?
+% Link each benefit back to the problem.
+\begin{itemize}
+  \item Flexible Voting -- Enables shareholders to revise voting decisions as new information emerges, within applicable voting deadlines.
+  \item Real-Time Proxy Delegation -- Enables shareholders to assign or revoke voting authority to authorized representatives in real time, where permitted.
+  \item Accurate Voting Power -- Ensures correct allocation of voting weights based on share ownership, share classes, and applicable voting rights.
+  \item Enforced Veto Rights -- Prevents unauthorized veto usage through eligibility validation and ensures correct application of veto rights in voting outcomes.
+\end{itemize}
+
+% ---------------------------------------------------------------------------
+\pibapart{Action}
+% What will you build and evaluate, in which steps, within 3 months?
+% Mark the minimum deliverable and keep some buffer.
+\begin{itemize}
+  \item \textbf{Sprint 1} -- Research shareholder meetings and voting procedures, identify functional and non-functional requirements, and develop a domain model covering key stakeholders and voting rules.
+  \item \textbf{Sprint 2} -- Design the system architecture, defining component responsibilities, API contracts, security boundaries, and event-driven interactions for voting and proxy delegation.
+  \item \textbf{Sprint 3} -- Develop a prototype integrating the Live Ballot Broker, Delegation Gateway, and Dynamic Rules Engine using a mocked share registry to demonstrate vote revisions, proxy delegation, weighted voting, and veto enforcement.
+\end{itemize}
+Team split: 2 Requirements Analysts, 2 Technical Developers, 1 Version Management Coordinator, 1 Domain Modelling Specialist.
+
+
+% ---------------------------------------------------------------------------
+\vfill
+{\small\textbf{AI usage statement.} \todo{Which AI tools and models did you
+use, and for what (e.g.\ brainstorming, rephrasing)? Write ``None'' if you
+did not use AI.}}
+
+\end{document}
