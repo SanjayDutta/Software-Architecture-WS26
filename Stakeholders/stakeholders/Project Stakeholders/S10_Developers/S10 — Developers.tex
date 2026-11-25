@@ -1,0 +1,99 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=25mm]{geometry}
+\usepackage{microtype}
+\usepackage{array,booktabs,longtable,needspace}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.65em}
+\setlength{\tabcolsep}{4pt}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{\fill}
+\renewcommand{\arraystretch}{1.25}
+
+
+\hypersetup{pdftitle={S10 -- Developers}}
+
+\begin{document}
+% S10: extracted from S10 — Developers.tex
+
+{\LARGE\bfseries S10 -- Developers\par}\vspace{1em}
+\noindent\rule{\linewidth}{0.4pt}
+
+\section*{Description}
+
+Developers are individuals responsible for designing, implementing, testing and maintaining GOSPL according to established functional requirements, quality requirements and technical constraints. Their primary interests are technical feasibility, correctness, maintainability and long-term evolution of the platform. They are not necessarily direct users of GOSPL.
+
+\section*{Stakeholder Concerns}
+
+\subsection*{Distinct Concerns}
+
+\begingroup\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\dimexpr 0.15\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.27\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.58\textwidth-2\tabcolsep\relax}@{}}
+\toprule
+\textbf{ID} & \textbf{Concern} & \textbf{Stakeholder Expectation} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Concern} & \textbf{Stakeholder Expectation} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\texttt{S10-C01} & \textbf{Requirements Clarity \& Feasibility} & We want clear, consistent, verifiable and technically feasible requirements that can be implemented within established resource constraints. \\
+\addlinespace
+\texttt{S10-C02} & \textbf{Software Quality \& Technical Sustainability} & We want to develop a reliable, secure, testable and maintainable platform that can be efficiently understood, operated, diagnosed, modified and extended throughout its lifecycle. \\
+\end{longtable}
+\endgroup
+
+\Needspace{14\baselineskip}
+
+\section*{Potential Stakeholder Conflicts}
+
+\begingroup\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}@{}}
+\toprule
+\textbf{Conflict} & \textbf{Conflicting Stakeholders} & \textbf{Stakeholder Expectation} & \textbf{Other Stakeholder Expectation} & \textbf{Implication for GOSPL} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Conflict} & \textbf{Conflicting Stakeholders} & \textbf{Stakeholder Expectation} & \textbf{Other Stakeholder Expectation} & \textbf{Implication for GOSPL} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\textbf{Business Priorities vs. Technical Sustainability} & S09 -- Product Owners & Ensure sufficient technical quality, maintainability, testability and long-term sustainability. & Deliver valuable functionality within established time, budget and resource constraints. & Balance delivery priorities and costs with technical sustainability without compromising essential voting accuracy, security or compliance requirements. \\
+\end{longtable}
+\endgroup
+
+This is the reciprocal perspective of the conflict identified under S09, not an additional independent conflict.
+
+\Needspace{10\baselineskip}
+
+\section*{Stakeholder Prioritization}
+
+\begingroup\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\dimexpr 0.23\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.77\textwidth-2\tabcolsep\relax}@{}}
+\toprule
+\textbf{Attribute} & \textbf{Assessment} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Attribute} & \textbf{Assessment} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\textbf{Category} & Product \& Development Stakeholder \\
+\addlinespace
+\textbf{Justification} & Developers directly influence the technical realization, quality, feasibility and maintainability of GOSPL. \\
+\addlinespace
+\textbf{Importance} & 4 \\
+\addlinespace
+\textbf{Influence} & 5 \\
+\end{longtable}
+\endgroup
+
+\end{document}

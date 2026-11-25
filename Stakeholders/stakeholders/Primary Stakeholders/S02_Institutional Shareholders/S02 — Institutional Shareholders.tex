@@ -1,0 +1,103 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=25mm]{geometry}
+\usepackage{microtype}
+\usepackage{array,booktabs,longtable,needspace}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.65em}
+\setlength{\tabcolsep}{4pt}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{\fill}
+\renewcommand{\arraystretch}{1.25}
+
+
+\hypersetup{pdftitle={S02 -- Institutional Shareholders}}
+
+\begin{document}
+% S02: extracted from S02 — Institutional Shareholders.tex
+
+{\LARGE\bfseries S02 -- Institutional Shareholders\par}\vspace{1em}
+\noindent\rule{\linewidth}{0.4pt}
+
+\section*{Description}
+
+Institutional shareholders are organizations or investment institutions that hold shares and exercise their associated voting rights through authorized representatives. Internal analysis, investment decisions and approval workflows remain outside GOSPL. The platform supports the authorized execution and traceability of externally determined voting decisions.
+
+\section*{Stakeholder Concerns}
+
+Concerns are recorded under the stakeholder that first introduces them. The Distinct Concerns table contains original concern definitions, which may also be shared by other stakeholders. Common Concerns lists inherited references without creating duplicate IDs.
+
+\subsection*{Distinct Concerns}
+
+\begingroup\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\dimexpr 0.15\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.27\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.58\textwidth-2\tabcolsep\relax}@{}}
+\toprule
+\textbf{ID} & \textbf{Concern} & \textbf{Stakeholder Expectation} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Concern} & \textbf{Stakeholder Expectation} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\texttt{S02-C01} & \textbf{Representation \& Delegation} & We want to designate authorized representatives and manage the scope and validity of their voting authority. \\
+\addlinespace
+\texttt{S02-C02} & \textbf{Voting Instruction Management} & We want our internally determined voting decisions to be accurately executed by our designated representatives. \\
+\addlinespace
+\texttt{S02-C03} & \textbf{Accountability \& Traceability} & We want to trace how our voting rights were exercised, by whom, when and under what authority. \\
+\addlinespace
+\texttt{S02-C04} & \textbf{Operational Efficiency} & We want to efficiently manage our representatives, voting instructions and voting activities across multiple resolutions. \\
+\end{longtable}
+\endgroup
+
+\Needspace{14\baselineskip}
+
+\section*{Potential Stakeholder Conflicts}
+
+\begingroup\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}@{}}
+\toprule
+\textbf{Conflict} & \textbf{Conflicting Stakeholders} & \textbf{Stakeholder Expectation} & \textbf{Other Stakeholder Expectation} & \textbf{Implication for GOSPL} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Conflict} & \textbf{Conflicting Stakeholders} & \textbf{Stakeholder Expectation} & \textbf{Other Stakeholder Expectation} & \textbf{Implication for GOSPL} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\textbf{Advanced Functionality vs. Simplicity (SC04)} & S01 -- Individual Shareholders & Sophisticated tools for managing organizational voting activities. & Simple and intuitive voting experience. & Keep individual voting workflows simple while supporting institutional needs. \\
+\end{longtable}
+\endgroup
+
+\Needspace{10\baselineskip}
+
+\section*{Stakeholder Prioritization}
+
+
+\begingroup\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\dimexpr 0.23\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.77\textwidth-2\tabcolsep\relax}@{}}
+\toprule
+\textbf{Attribute} & \textbf{Assessment} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Attribute} & \textbf{Assessment} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\textbf{Category} & Primary stakeholder \\
+\addlinespace
+\textbf{Justification} & Primary users with distinctive organizational voting needs and potentially substantial voting power and influence on product needs; actual project influence is not established. \\
+\addlinespace
+\textbf{Importance} & 5 \\
+\textbf{Influence} & 4 \\
+\end{longtable}
+\endgroup
+
+\end{document}

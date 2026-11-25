@@ -1,0 +1,102 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=25mm]{geometry}
+\usepackage{microtype}
+\usepackage{array,booktabs,longtable,needspace}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.65em}
+\setlength{\tabcolsep}{4pt}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{\fill}
+\renewcommand{\arraystretch}{1.25}
+
+
+\hypersetup{pdftitle={S09 -- Product Owners}}
+
+\begin{document}
+% S09: extracted from S09 — Product Owners.tex
+
+{\LARGE\bfseries S09 -- Product Owners\par}\vspace{1em}
+\noindent\rule{\linewidth}{0.4pt}
+
+\section*{Description}
+
+Product Owners are individuals responsible for defining the product vision, managing product scope, prioritizing requirements and ensuring that the product delivers value to its intended stakeholders.
+
+In the context of GOSPL, Product Owners are concerned with delivering a usable, reliable and trustworthy shareholder voting platform that addresses stakeholder needs within established business, regulatory and resource constraints.
+
+\section*{Stakeholder Concerns}
+
+\subsection*{Distinct Concerns}
+
+\begingroup\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\dimexpr 0.15\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.27\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.58\textwidth-2\tabcolsep\relax}@{}}
+\toprule
+\textbf{ID} & \textbf{Concern} & \textbf{Stakeholder Expectation} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Concern} & \textbf{Stakeholder Expectation} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\texttt{S09-C01} & \textbf{Product Value \& Scope} & We want GOSPL to deliver meaningful stakeholder value by addressing prioritized stakeholder needs within established business and resource constraints. \\
+\addlinespace
+\texttt{S09-C02} & \textbf{Product Quality \& Sustainability} & We want GOSPL to meet stakeholder quality expectations while remaining economically and operationally sustainable. \\
+\end{longtable}
+\endgroup
+
+\Needspace{14\baselineskip}
+
+\section*{Potential Stakeholder Conflicts}
+
+\begingroup\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}@{}}
+\toprule
+\textbf{Conflict} & \textbf{Conflicting Stakeholders} & \textbf{Stakeholder Expectation} & \textbf{Other Stakeholder Expectation} & \textbf{Implication for GOSPL} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Conflict} & \textbf{Conflicting Stakeholders} & \textbf{Stakeholder Expectation} & \textbf{Other Stakeholder Expectation} & \textbf{Implication for GOSPL} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\textbf{Business Priorities vs. Technical Sustainability} & S10 -- Developers & Deliver valuable product functionality within established time, budget and resource constraints. & Ensure sufficient technical quality, maintainability, testability and long-term sustainability. & Balance business priorities, delivery timelines and costs with software quality and technical sustainability without compromising essential voting accuracy, security or compliance requirements. \\
+\end{longtable}
+\endgroup
+
+This potential conflict may arise in decisions concerning feature prioritization, delivery timelines, technical debt, testing effort and operational costs. It does not imply that Product Owners and Developers have inherently opposing objectives.
+
+\Needspace{10\baselineskip}
+
+\section*{Stakeholder Prioritization}
+
+
+\begingroup\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\dimexpr 0.23\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.77\textwidth-2\tabcolsep\relax}@{}}
+\toprule
+\textbf{Attribute} & \textbf{Assessment} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Attribute} & \textbf{Assessment} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\textbf{Category} & Product \& Development Stakeholder \\
+\addlinespace
+\textbf{Justification} & Product Owners influence the product vision, scope, requirements prioritization and acceptance criteria. \\
+\addlinespace
+\textbf{Importance} & 5 \\
+\addlinespace
+\textbf{Influence} & 5 \\
+\end{longtable}
+\endgroup
+
+\end{document}

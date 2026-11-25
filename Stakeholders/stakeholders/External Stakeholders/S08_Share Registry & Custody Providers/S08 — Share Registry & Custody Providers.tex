@@ -1,0 +1,97 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=25mm]{geometry}
+\usepackage{microtype}
+\usepackage{array,booktabs,longtable,needspace}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.65em}
+\setlength{\tabcolsep}{4pt}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{\fill}
+\renewcommand{\arraystretch}{1.25}
+
+
+\hypersetup{pdftitle={S08 -- Share Registry \& Custody Providers}}
+
+\begin{document}
+% S08: extracted from S08 — Share Registry and Custody Providers.tex
+
+{\LARGE\bfseries S08 -- Share Registry \& Custody Providers\par}\vspace{1em}
+\noindent\rule{\linewidth}{0.4pt}
+
+\section*{Description}
+
+Share Registry \& Custody Providers are external organizations responsible for maintaining or administering shareholding information and facilitating the exchange of relevant shareholder information.
+
+In the context of GOSPL, their relevance is primarily associated with providing reliable information concerning shareholder eligibility, voting power and, where applicable, representation. Examples include Euroclear Finland, as a central securities depository and share registry operator, and custodian or nominee banks. These organizations have distinct responsibilities but are grouped together because of their shared relevance to GOSPL.
+
+\section*{Stakeholder Concerns}
+
+\subsection*{Distinct Concerns}
+
+\begingroup\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\dimexpr 0.15\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.27\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.58\textwidth-2\tabcolsep\relax}@{}}
+\toprule
+\textbf{ID} & \textbf{Concern} & \textbf{Stakeholder Expectation} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Concern} & \textbf{Stakeholder Expectation} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\texttt{S08-C01} & \textbf{Shareholder Information Exchange} & We want relevant shareholder eligibility, voting entitlement and representation information to be accurately, securely and promptly communicated and correctly utilized throughout the shareholder voting process. \\
+\end{longtable}
+\endgroup
+
+\Needspace{14\baselineskip}
+
+\section*{Potential Stakeholder Conflicts}
+
+\begingroup\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.2\textwidth-2\tabcolsep\relax}@{}}
+\toprule
+\textbf{Conflict} & \textbf{Conflicting Stakeholders} & \textbf{Stakeholder Expectation} & \textbf{Other Stakeholder Expectation} & \textbf{Implication for GOSPL} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Conflict} & \textbf{Conflicting Stakeholders} & \textbf{Stakeholder Expectation} & \textbf{Other Stakeholder Expectation} & \textbf{Implication for GOSPL} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\textbf{Information Confidentiality vs. Operational Accessibility} & S05 -- AGM Administrators & Ensure shareholder information is exchanged and accessed only for authorized purposes. & Obtain sufficient information to prepare and execute voting efficiently. & Support controlled access and data minimization. \\
+\end{longtable}
+\endgroup
+
+\Needspace{10\baselineskip}
+
+\section*{Stakeholder Prioritization}
+
+\begingroup\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\dimexpr 0.23\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr 0.77\textwidth-2\tabcolsep\relax}@{}}
+\toprule
+\textbf{Attribute} & \textbf{Assessment} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Attribute} & \textbf{Assessment} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\textbf{Category} & External Stakeholder \\
+\addlinespace
+\textbf{Justification} & Reliable shareholder information is fundamental to establishing eligibility and voting entitlements. However, these providers do not necessarily influence GOSPL's internal functionality or voting procedures. \\
+\addlinespace
+\textbf{Importance} & 4 \\
+\addlinespace
+\textbf{Influence} & 3 \\
+\end{longtable}
+\endgroup
+
+\end{document}
